@@ -1,8 +1,12 @@
 {
-  "name": "Slack Invite Automation",
-  "description": "A tiny web application to invite a user into your slack team.",
-  "repository": "https://github.com/outsideris/slack-invite-automation",
-  "keywords": ["node", "slack", "invite"],
+  "name": "Welfact Slack Automate",
+  "description": "Welfact's slack automate little server..",
+  "repository": "https://github.com/hang-up/slack-invite-automation",
+  "keywords": [
+    "node",
+    "slack",
+    "invite"
+  ],
   "env": {
     "COMMUNITY_NAME": {
       "description": "Your team name",
@@ -18,6 +22,16 @@
     },
     "INVITE_TOKEN": {
       "description": "Shared invite token used to get access. Leave blank if you don't want users to have to provide a token.",
+      "value": "",
+      "required": false
+    },
+    "RECAPTCHA_SITE": {
+      "description": "Recaptcah v2 site",
+      "value": "",
+      "required": false
+    },
+    "RECAPTCHA_SECRET": {
+      "description": "Recaptcah v2 secret",
       "value": "",
       "required": false
     }
